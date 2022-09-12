@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzeria</title>
+</head>
+
+<body>
+
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Név</th>
+        <th>Cim</th>
+        <th>Nyitás</th>
+        <th>Zárás</th>
+    </tr>
+    <tr data-th-each="p : ${pizzerias}">
+        <td data-th-text="${p.id}"></td>
+        <td data-th-text="${p.name}"></td>
+        <td data-th-text="${p.address}"></td>
+        <td data-th-text="${p.openHour}"></td>
+        <td data-th-text="${p.closeHour}"></td>
+    </tr>
+</table>
+
+</body>
+
+</html>
